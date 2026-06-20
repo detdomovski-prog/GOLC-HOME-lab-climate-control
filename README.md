@@ -1,4 +1,6 @@
-# GOLC-HOME Climate Control
+# GOLC-HOME-lab-climate-control
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Отдельный репозиторий для климатического проекта на ESPHome.
 
