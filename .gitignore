@@ -1,0 +1,7 @@
+.esphome/
+.secrets/
+.vscode/
+__pycache__/
+secrets.yaml
+*.secrets.yaml
+*.log
