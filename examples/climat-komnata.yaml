@@ -6,6 +6,8 @@ esp8266:
   board: d1_mini_lite
 
 logger:
+  # If UART is wired to the hardware serial pins used by ESP logging,
+  # disable the serial logger to avoid conflicts with Midea communication.
   baud_rate: 0
 
 api:
@@ -27,6 +29,10 @@ wifi:
 captive_portal:
 
 uart:
+  # Wiring rule:
+  # ESP TX -> Midea RX
+  # ESP RX -> Midea TX
+  # GND must be common on both sides
   tx_pin: GPIO1
   rx_pin: GPIO3
   baud_rate: 9600

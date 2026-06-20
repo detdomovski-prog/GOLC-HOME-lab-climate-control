@@ -26,6 +26,7 @@
 
 - `docs/implementation-guide.md` — полная инструкция по реализации проекта
 - `docs/climate-vs-thermostat.md` — разница между базовым `climate` и `thermostat`
+- `docs/wiring-and-troubleshooting.md` — схема подключения `TX/RX`, проверка `logger` и типовые причины, почему проект может не работать
 - `docs/sources.md` — источники информации и примечания
 - `examples/climat-komnata.yaml` — безопасный пример рабочего конфига
 - `examples/secrets.example.yaml` — шаблон для секретов
@@ -48,6 +49,8 @@
 3. Проверить реальные пины UART и соответствие платы.
 4. Проверить, что для UART не конфликтует `logger`.
 5. Загрузить прошивку и проверить появление climate-сущности в Home Assistant.
+
+Перед первой проверкой подключения также стоит открыть `docs/wiring-and-troubleshooting.md` и отдельно сверить `TX/RX`, `GND` и конфликт `logger` с аппаратным UART.
 
 ## Важное замечание
 
